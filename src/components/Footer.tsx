@@ -29,7 +29,7 @@ export default function Footer() {
 
         <p className="font-bold">
           Guriel AMP <br />
-          Providing reliable tech since 1988
+          Frontend Developer since 2016
         </p>
         <p>Copyright © 2023 - All right reserved</p>
       </aside>
