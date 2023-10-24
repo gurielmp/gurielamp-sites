@@ -1,31 +1,11 @@
+import Image from "next/image"
 export default function Footer() {
   return (
-    <footer className="footer footer-center p-10 bg-primary text-primary-content">
+    <footer className="footer footer-center p-10 bg-black text-[#bebdbd]">
       <aside>
-        <svg
-          enableBackground="new 0 0 24 24"
-          height="50"
-          widths="50"
-          id="Layer_1"
-          version="1.1"
-          viewBox="0 0 24 24"
-          xmlSpace="preserve"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <g id="icon">
-            <circle cx="12" cy="12" fill="#32A04C" r="11" />
-            <path
-              d="M17.9907,11.118c0.1191,1.6938,-0.1307,3.5067,-1.2318,4.8664c-1.5078,1.9407,-4.294,2.5102,-6.5601,1.749c-2.4056,-0.7902,-4.1546,-3.2133,-4.1023,-5.7525c-0.1191,-3.1377,2.6293,-6.0372,5.7699,-6.075c1.6008,-0.1365,3.158,0.4852,4.3696,1.4991c-0.4968,0.5462,-1.0023,1.0866,-1.5427,1.5921c-1.0662,-0.6479,-2.3504,-1.1418,-3.5967,-0.7031c-2.0105,0.5723,-3.2278,2.946,-2.484,4.9128c0.6159,2.054,3.1145,3.1813,5.0726,2.3184c1.0139,-0.3632,1.6822,-1.2987,1.9756,-2.3039c-1.1621,-0.0232,-2.3242,-0.0087,-3.4863,-0.0407c-0.0029,-0.6915,-0.0058,-1.38,-0.0029,-2.0715C14.1092,11.1064,16.05,11.1006,17.9907,11.118z"
-              fill="#FFFFFF"
-            />
-            <path
-              d="M4.2218,19.7782C6.2124,21.7688,8.9624,23,12,23c6.0751,0,11,-4.9249,11,-11c0,-3.0376,-1.2312,-5.7876,-3.2218,-7.7782L4.2218,19.7782z"
-              fill="#231F20"
-              opacity="0.1"
-            />
-          </g>
-        </svg>
+        <span className="p-4">
+          <Image src={"/g.png"} width={50} height={50} alt="Guriel"></Image>
+        </span>
 
         <p className="font-bold">
           Guriel AMP <br />

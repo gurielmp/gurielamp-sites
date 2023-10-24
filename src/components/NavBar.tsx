@@ -1,12 +1,16 @@
 import Link from "next/link"
 import ThemeToggle from "./ThemeToggle"
+import Image from "next/image"
 
 export default function NavBar() {
   return (
-    <div className="navbar bg-base-300 text-base-content">
+    <div className="navbar bg-[#000] text-base-content">
       <div className="flex-1">
         <Link href="/" className="btn btn-ghost normal-case text-lg">
-          Home
+          <span>
+            <Image src={"/g.png"} width={40} height={40} alt="Guriel"></Image>
+          </span>
+          uriel
         </Link>
       </div>
       <div className="flex-none">
