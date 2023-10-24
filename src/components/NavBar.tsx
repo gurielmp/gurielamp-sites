@@ -19,7 +19,7 @@ export default function NavBar() {
               <summary>Others</summary>
               <ul className="p-2 bg-base-100">
                 <li>
-                  <a>Skills</a>
+                  <a>Porfolio</a>
                 </li>
                 <li>
                   <a>Contact</a>
