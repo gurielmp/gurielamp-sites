@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --my-color: #fff;
-  /* or any other variables/style */
-}
-[data-theme="dark"] {
-  --my-color: #000;
-}
-[data-theme="pink"] {
-  --my-color: #ffabc8;
-}
-[data-theme="blue"] {
-  --my-color: #47149e;
-}
-
 body {
-  background-color: var(--my-color);
   font-family: "Poppins", sans-serif;
-  color: #535353;
 }
