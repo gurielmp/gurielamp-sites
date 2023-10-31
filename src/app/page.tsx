@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#101010] items-center px-20 pt-[110px]">
+    <main className="flex min-h-screen flex-col bg-[#101010] items-center px-7 lg:px-20 pt-[100px]">
       <div className="mb-5">
         <h3 className="name text-6xl from-bold lowercase">Guriel AMP</h3>
         <span className="line inline-block w-[120px] h-[5px] bg-[#d3d3d3] mt-4 mb-8"></span>
@@ -19,7 +19,7 @@ export default function Home() {
       <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 gap-4 mb-4">
         <div className="card bg-black shadow-none shadow-slate-100">
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-4xl font-light">50+</h2>
+            <h2 className="card-title text-4xl font-light">20+</h2>
             <p className="font-light text-sm">Completed Projects</p>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function Home() {
         </div>
         <div className="card bg-black shadow-none shadow-slate-100">
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-4xl font-light">40+</h2>
+            <h2 className="card-title text-4xl font-light">20+</h2>
             <p className="font-light text-sm">Satisfied Clients</p>
           </div>
         </div>
