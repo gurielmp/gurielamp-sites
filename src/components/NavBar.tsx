@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function NavBar() {
   return (
-    <div className="navbar bg-[#000] text-base-content fixed top-0 left-0 right-0">
+    <div className="navbar px-3 lg:px-[65px] bg-[#000] text-base-content fixed top-0 left-0 right-0">
       <div className="flex-1">
         <Link href="/" className="btn btn-ghost normal-case text-lg">
           <span>
