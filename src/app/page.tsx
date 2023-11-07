@@ -40,7 +40,7 @@ export default function Home() {
         <div className="card bg-black shadow-none shadow-slate-100">
           <div className="card-body items-center text-center">
             <h2 className="card-title text-4xl font-light">
-              6 <span className="text-sm">Years</span>
+              4 <span className="text-sm">Years</span>
             </h2>
             <p className="font-light text-sm">Frontend Experience</p>
           </div>
