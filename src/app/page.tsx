@@ -1,5 +1,5 @@
-import ThemeToggle from "@/components/ThemeToggle"
-import Image from "next/image"
+"use client"
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
@@ -17,34 +17,54 @@ export default function Home() {
         </p>
       </div>
       <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 gap-4 mb-4">
-        <div className="card bg-black shadow-none shadow-slate-100">
+        <motion.div
+          initial={{ opacity: 0, x: -110 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="card bg-black shadow-none shadow-slate-100"
+        >
           <div className="card-body items-center text-center">
             <h2 className="card-title text-4xl font-light">20+</h2>
             <p className="font-light text-sm">Completed Projects</p>
           </div>
-        </div>
-        <div className="card bg-black shadow-none shadow-slate-100">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 110 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="card bg-black shadow-none shadow-slate-100"
+        >
           <div className="card-body items-center text-center">
             <h2 className="card-title text-4xl font-light">
               Webflow <br />
               Expert
             </h2>
           </div>
-        </div>
-        <div className="card bg-black shadow-none shadow-slate-100">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 110 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          className="card bg-black shadow-none shadow-slate-100"
+        >
           <div className="card-body items-center text-center">
             <h2 className="card-title text-4xl font-light">20+</h2>
             <p className="font-light text-sm">Satisfied Clients</p>
           </div>
-        </div>
-        <div className="card bg-black shadow-none shadow-slate-100">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 110 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.5, duration: 0.5 }}
+          className="card bg-black shadow-none shadow-slate-100"
+        >
           <div className="card-body items-center text-center">
             <h2 className="card-title text-4xl font-light">
               4 <span className="text-sm">Years</span>
             </h2>
             <p className="font-light text-sm">Frontend Experience</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </main>
   )
