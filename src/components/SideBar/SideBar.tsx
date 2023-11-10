@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function SideBar() {
   return (
-    <div>
+    <div className="bg-[#111]">
       <button
         data-drawer-target="logo-sidebar"
         data-drawer-toggle="logo-sidebar"
