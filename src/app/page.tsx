@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#161616] items-center px-7 lg:px-20 pt-[100px] md:ml-64">
+    <main className="flex min-h-screen flex-col bg-[#131313] items-center px-7 lg:px-20 pt-5 md:pt-14 md:ml-64">
       <div className="mb-5">
         <h3 className="name text-6xl from-bold lowercase">Guriel AMP</h3>
         <span className="line inline-block w-[120px] h-[5px] bg-[#d3d3d3] mt-4 mb-8"></span>
