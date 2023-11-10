@@ -1,10 +1,48 @@
+"use client"
+import { motion } from "framer-motion"
 import React from "react"
 
 export default function AboutPage() {
   return (
-    <div className="flex bg-[#101010] min-h-screen flex-col p-24 items-center">
-      <h1 className="text-6xl p-7">This is About</h1>
-      <p className="font-[100] text-2xl mb-5">This is the about page</p>
+    <div className="flex bg-[#101010] min-h-screen flex-col pt-20 px-7">
+      <p className="font-[100] text-2xl mb-5"></p>
+      <div className="w-full grid lg:grid-cols-1 md:grid-cols-1 gap-4 mb-4">
+        <motion.div
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
+          whileHover={{ scale: 0.99 }}
+          className="card bg-black shadow-none shadow-slate-100"
+        >
+          <div className="card-body">
+            <h3 className="text-4xl font-light">bout mi</h3>
+            <p className="font-light">
+              a passionate Next.js developer dedicated to crafting exceptional
+              web experiences. With a love for clean code and an eye for design,
+              I specialize in building high-performance, server-rendered React
+              applications that not only meet but exceed user expectations. My
+              journey in the world of web development started with a curiosity
+              for creating seamless and interactive interfaces. Over the years,
+              I&rsquo;ve honed my skills in Next.js, leveraging its powerful
+              features to deliver scalable and maintainable projects. What sets
+              me apart is not just my technical proficiency but also my
+              commitment to staying abreast of the latest industry trends. I
+              thrive on tackling challenges and transforming ideas into
+              pixel-perfect, responsive web applications. Whether it&rsquo;s
+              optimizing performance, implementing dynamic routing, or ensuring
+              a delightful user experience, I bring a holistic approach to
+              Next.js development. Collaboration is at the core of my work
+              philosophy, and I thrive in team environments where innovative
+              ideas converge to build digital solutions that stand out.
+              Let&rsquo;s join forces to create web applications that not only
+              meet but exceed expectations. If you&rsquo;re seeking a Next.js
+              developer with a passion for pushing the boundaries of
+              what&rsquo;s possible in web development, I&rsquo;m excited to
+              connect and bring your vision to life.
+            </p>
+          </div>
+        </motion.div>
+      </div>
     </div>
   )
 }
