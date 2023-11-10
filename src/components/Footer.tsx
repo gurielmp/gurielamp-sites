@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function Footer() {
   return (
-    <footer className="footer footer-center p-10 bg-black text-[#bebdbd]">
+    <footer className="footer footer-center p-10 bg-black md:ml-24 text-[#bebdbd]">
       <aside>
         <span className="p-4">
           <Image src={"/g.png"} width={50} height={50} alt="Guriel"></Image>

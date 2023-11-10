@@ -4,8 +4,9 @@ import React from "react"
 
 export default function AboutPage() {
   return (
-    <div className="flex bg-[#101010] min-h-screen flex-col pt-20 px-7">
-      <p className="font-[100] text-2xl mb-5"></p>
+    <div className="flex bg-[#161616] min-h-screen flex-col pt-20 px-7 sm:ml-64">
+      <p className="font-[100] text-6xl mb-5">bout mi</p>
+      <span className="line inline-block w-[120px] h-[2px] bg-[#d3d3d3] mt-0 mb-8"></span>
       <div className="w-full grid lg:grid-cols-1 md:grid-cols-1 gap-4 mb-4">
         <motion.div
           initial={{ opacity: 0, y: 200 }}
@@ -15,7 +16,6 @@ export default function AboutPage() {
           className="card bg-black shadow-none shadow-slate-100"
         >
           <div className="card-body">
-            <h3 className="text-4xl font-light">bout mi</h3>
             <p className="font-light">
               a passionate Next.js developer dedicated to crafting exceptional
               web experiences. With a love for clean code and an eye for design,

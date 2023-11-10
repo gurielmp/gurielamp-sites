@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#101010] items-center px-7 lg:px-20 pt-[100px]">
+    <main className="flex min-h-screen flex-col bg-[#161616] items-center px-7 lg:px-20 pt-[100px] md:ml-64">
       <div className="mb-5">
         <h3 className="name text-6xl from-bold lowercase">Guriel AMP</h3>
         <span className="line inline-block w-[120px] h-[5px] bg-[#d3d3d3] mt-4 mb-8"></span>
@@ -17,7 +17,7 @@ export default function Home() {
         </p>
       </div>
       <div className="w-full grid lg:grid-cols-2 md:grid-cols-2 gap-4 mb-4">
-        <div className="w-full grid lg:grid-cols-2 md:grid-cols-2 gap-4 mb-4">
+        <div className="w-full grid lg:grid-cols-2 md:grid-cols-1 gap-4 mb-4">
           <motion.div
             initial={{ opacity: 0, x: -110 }}
             animate={{ opacity: 1, x: 0 }}
