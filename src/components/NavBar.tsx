@@ -12,7 +12,7 @@ export default function NavBar() {
           uriel
         </Link>
       </div>
-      <div className="flex-none">
+      <div className="flex-none z-10">
         <ul className="menu menu-horizontal px-1">
           <li>
             <details>
@@ -39,7 +39,7 @@ export default function NavBar() {
                   <Link href="/about">About</Link>
                 </li>
                 <li>
-                  <a>Inbox</a>
+                  <Link href="/inbox">Inbox</Link>
                 </li>
               </ul>
             </details>
