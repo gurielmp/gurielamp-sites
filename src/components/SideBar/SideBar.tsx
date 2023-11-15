@@ -33,7 +33,7 @@ export default function SideBar() {
                 className="flex items-center p-2 rounded-lg duration-300 hover:text-white group"
               >
                 <svg
-                  className="w-5 h-5 text-gray-500 transition duration-300 group-hover:text-white"
+                  className="w-5 h-5 transition duration-300 group-hover:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
