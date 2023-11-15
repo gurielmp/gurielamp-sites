@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 export default function InboxPage() {
   return (
-    <div className="flex bg-[#161616] min-h-screen flex-col pt-5 px-7 font-light lg:px-20 md:pt-14 sm:ml-64 gap-1">
+    <div className="flex bg-[#131313] min-h-screen flex-col pt-5 px-7 font-light lg:px-20 md:pt-14 md:ml-64 gap-1">
       <p className="font-[100] text-6xl mb-5">inbox</p>
       <span className="line inline-block w-[80px] h-[2px] bg-[#d3d3d3] mt-0 mb-8"></span>
       <div className="flex flex-col lg:w-1/2 gap-1">
