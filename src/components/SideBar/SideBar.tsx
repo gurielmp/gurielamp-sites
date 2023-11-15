@@ -7,10 +7,11 @@ import { motion } from "framer-motion"
 
 export default function SideBar() {
   const username = useAppSelector((state) => state.authReducer.value.username)
-  const isModerator = useAppSelector(
-    (state) => state.authReducer.value.isModerator
-  )
   const isAuth = useAppSelector((state) => state.authReducer.value.isAuth)
+  // const isModerator = useAppSelector(
+  //   (state) => state.authReducer.value.isModerator
+  // )
+
   return (
     <div className="bg-[#000]">
       {/* <ButtonToggleSidebar /> */}
@@ -107,7 +108,7 @@ export default function SideBar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/auth/login"
                 className="flex items-center p-2 rounded-lg duration-300 hover:text-white group"
               >
                 <svg
@@ -164,7 +165,7 @@ export default function SideBar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/auth/login"
                 className="flex items-center p-2 rounded-lg duration-300 hover:text-white group"
               >
                 <svg
