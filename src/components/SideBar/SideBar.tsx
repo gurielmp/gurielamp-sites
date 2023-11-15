@@ -1,9 +1,16 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
-import ButtonToggleSidebar from "./ButtonToggleSidebar"
 import NavBar from "../NavBar"
+import { useAppSelector } from "@/redux/store"
+import { motion } from "framer-motion"
 
 export default function SideBar() {
+  const username = useAppSelector((state) => state.authReducer.value.username)
+  const isModerator = useAppSelector(
+    (state) => state.authReducer.value.isModerator
+  )
+  const isAuth = useAppSelector((state) => state.authReducer.value.isAuth)
   return (
     <div className="bg-[#000]">
       {/* <ButtonToggleSidebar /> */}
@@ -26,7 +33,23 @@ export default function SideBar() {
               uriel
             </span>
           </Link>
-          <ul className="space-y-2 font-thin pt-16 text-gray-400">
+          {isAuth && (
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              <h3 className="flex items-center ps-2.5 mb-5 font-light">
+                Heiiiya,{" "}
+                <span className="text-[#87c0cd] text-2xl ml-2 capitalize">
+                  {username}
+                </span>
+              </h3>
+            </motion.div>
+          )}
+
+          {/* {isModerator && <h1>You are a moderator</h1>} */}
+          <ul className="space-y-2 font-thin pt-12 text-gray-400">
             <li>
               <Link
                 href="/"
@@ -118,7 +141,7 @@ export default function SideBar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/auth/login"
                 className="flex items-center p-2 rounded-lg duration-300 hover:text-white group"
               >
                 <svg
