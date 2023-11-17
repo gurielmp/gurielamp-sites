@@ -52,7 +52,7 @@ export default function NavBar() {
               </summary>
               <ul className="p-2 bg-base-100 top-6 right-0">
                 <li>
-                  <Link href="/">Dashboard</Link>
+                  <Link href="/products">Products</Link>
                 </li>
                 <li>
                   <Link href="/about">About</Link>
