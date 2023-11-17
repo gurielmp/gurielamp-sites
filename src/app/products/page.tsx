@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function ProductPage() {
   return (
-    <div className="flex bg-[#131313] min-h-screen flex-col pt-5 px-7 lg:px-20 md:pt-14 md:ml-64 lg:pb-10">
+    <div className="flex bg-[#131313] min-h-screen flex-col pt-5 px-7 lg:px-20 md:pt-14 md:ml-64 pb-10">
       <p className="font-[100] text-6xl mb-5">awr products</p>
       <span className="line inline-block w-[140px] h-[2px] bg-[#d3d3d3] mt-0 mb-8"></span>
       <div className="card w-full md:w-96 bg-black font-light shadow-xl">
