@@ -11,7 +11,6 @@ export default function InboxPage() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.5 }}
-          whileHover={{ scale: 0.99 }}
           className="card bg-black shadow-none shadow-slate-100"
         >
           <div className="collapse collapse-arrow">
@@ -26,7 +25,6 @@ export default function InboxPage() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          whileHover={{ scale: 0.99 }}
           className="card bg-black shadow-none shadow-slate-100"
         >
           <div className="collapse collapse-arrow">
@@ -41,7 +39,6 @@ export default function InboxPage() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.5 }}
-          whileHover={{ scale: 0.99 }}
           className="card bg-black shadow-none shadow-slate-100"
         >
           <div className="collapse collapse-arrow">

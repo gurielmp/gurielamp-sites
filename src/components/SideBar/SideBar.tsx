@@ -125,7 +125,7 @@ export default function SideBar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/products"
                 className="flex items-center p-2 rounded-lg duration-300 hover:text-white group"
               >
                 <svg

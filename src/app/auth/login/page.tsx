@@ -10,7 +10,12 @@ export default function LoginPage() {
   const dispatch = useDispatch<AppDispatch>()
 
   const onClickLogin = () => {
-    dispatch(logIn(username))
+    if (username.length >= 3) {
+      dispatch(logIn(username))
+      setUsername("")
+    } else {
+      alert("Username must be at least 3 characters long")
+    }
   }
 
   const onClickLogout = () => {
