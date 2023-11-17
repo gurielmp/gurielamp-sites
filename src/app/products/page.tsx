@@ -1,12 +1,19 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 export default function ProductPage() {
   return (
     <div className="flex bg-[#131313] min-h-screen flex-col pt-5 px-7 lg:px-20 md:pt-14 md:ml-64 pb-10">
       <p className="font-[100] text-6xl mb-5">awr products</p>
       <span className="line inline-block w-[140px] h-[2px] bg-[#d3d3d3] mt-0 mb-8"></span>
-      <div className="card w-full md:w-96 bg-black font-light shadow-xl">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.1, duration: 0.5 }}
+        className="card w-full md:w-96 bg-black font-light shadow-xl"
+      >
         <figure>
           <Image
             src="https://res.cloudinary.com/dm03cwhat/image/upload/v1700233973/risoles-banner_kpjpvf.jpg"
@@ -33,7 +40,7 @@ export default function ProductPage() {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
