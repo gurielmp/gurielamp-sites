@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function ProductPage() {
   return (
@@ -24,7 +25,12 @@ export default function ProductPage() {
             flavors and the irresistible melt-in-your-mouth filling!
           </p>
           <div className="card-actions justify-end">
-            <button className="btn font-light lowercase ">Order Now</button>
+            <Link
+              href="https://www.instagram.com/risoles.omahgembul/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+            >
+              <button className="btn font-light lowercase ">Order Now</button>
+            </Link>
           </div>
         </div>
       </div>
