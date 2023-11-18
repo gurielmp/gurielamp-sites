@@ -32,41 +32,42 @@ export default function NavBar() {
             </h3>
           </motion.div>
         )}
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <details>
-              <summary className="pl-2 hover:bg-black">
-                <svg
-                  className="w-6 h-6"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clipRule="evenodd"
-                    fillRule="evenodd"
-                    d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
-                  />
-                </svg>
-              </summary>
-              <ul className="p-2 bg-base-100 top-6 right-0">
-                <li>
-                  <Link href="/products">Products</Link>
-                </li>
-                <li>
-                  <Link href="/about">About</Link>
-                </li>
-                <li>
-                  <Link href="/inbox">Inbox</Link>
-                </li>
-                <li>
-                  <Link href="/auth/login">Login</Link>
-                </li>
-              </ul>
-            </details>
-          </li>
-        </ul>
+        <div className="dropdown dropdown-end">
+          <label tabIndex={0} className="btn btn-ghost p-2">
+            <div className="flex items-center">
+              <svg
+                className="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clipRule="evenodd"
+                  fillRule="evenodd"
+                  d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+                />
+              </svg>
+            </div>
+          </label>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 gap-2"
+          >
+            <li>
+              <Link href="/products">Products</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <Link href="/inbox">Inbox</Link>
+            </li>
+            <li>
+              <Link href="/auth/login">Login</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   )
