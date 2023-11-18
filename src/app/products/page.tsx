@@ -10,8 +10,8 @@ export default function ProductPage() {
       <span className="line inline-block w-[140px] h-[2px] bg-[#d3d3d3] mt-0 mb-8"></span>
       <div className="grid xl:grid-cols-2">
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.5 }}
           className="card mb-5 w-full md:w-96 bg-black font-light shadow-xl"
         >
@@ -27,7 +27,7 @@ export default function ProductPage() {
           <div className="card-body">
             <h2 className="card-title font-light">risoles omah gembul</h2>
             <p className="text-sm pb-4">
-              Crispy outer layer, lusciously soft with a burst of cheesy
+              crispy outer layer, lusciously soft with a burst of cheesy
               goodness inside. Indulge in our homemade cheese-filled risoles for
               the perfect hunger fix! Order now to experience the delightful
               burst of flavors and the irresistible melt-in-your-mouth filling!
@@ -43,9 +43,9 @@ export default function ProductPage() {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.1, duration: 0.5 }}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
           className="card mb-5 w-full md:w-96 bg-black font-light shadow-xl"
         >
           <figure>
